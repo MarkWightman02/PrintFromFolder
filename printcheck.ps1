@@ -1,5 +1,5 @@
-$folder = "L:\"
-$archiveFolder = "C:\Users\Mark\Documents\forPrint\archive"
+$folder = "PathToFolderWithItemsToPrint"
+$archiveFolder = "PathToFolderWhereItemsWillGoAfterPrint"
 while ($true) {
     $pdfFiles = Get-ChildItem -Path $folder -Filter *.pdf
     foreach ($file in $pdfFiles) {
